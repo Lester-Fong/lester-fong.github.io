@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+main background color: background-color: rgb(1, 11, 20);
+main font color : color: #eee;
+nav fonts :  font-family: "Tourney", cursive;
+h1 fonts : font-family: 'Chakra Petch', sans-serif;
+2nd background color : background-color: #d3cfba;
+*/
+
+body {
+  background: #151019;
+  color: #eee;
+}
+
+nav {
+  background-color: rgb(1, 11, 20);
+}
+
+.nav-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-contents ul,
+.nav-contents a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: #eee;
+  font-family: "Tourney", cursive;
+  text-decoration: none;
+}
+
+.nav-contents li::after {
+  content: "";
+  width: 4px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: red;
+  display: block;
+  transition: 0.5s all ease-in-out;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+  height: 3px;
+  color: white;
+}
+
+ul li {
+  margin: 0 2em;
+}
+
+.nav-contents img {
+  width: 17%;
+}
+
+.self-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 2em auto 4em;
+  position: relative;
+}
+
+.intro {
+  flex-basis: 100%;
+}
+
+header h1 {
+  display: inline;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 200;
+  padding-right: 5em;
+  /* border: 2px solid red; */
+}
+
+h4 {
+  background-color: #d3cfba;
+  width: 90%;
+  color: red;
+  font-weight: 700;
+  padding: 1em;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.intro-img {
+  flex-basis: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.intro-img img {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 10px 10px rgb(141, 2, 2);
+}
+
+.social-icons {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  left: 1em;
+  z-index: 1;
+}
+
+.social-icons .fa {
+  display: block;
+  width: 20px;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.social-icons a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #d3cfba;
+}
+
+/* -----ABOUT ME------ */
+
+.about-section {
+  background: url("./resources/compute-ea4c57a4.png");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5em 0;
+}
+
+.mapa {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.mapa h1 {
+  display: inline-block;
+  font-family: "Oswald";
+  font-size: 3rem;
+  color: #d3cfba;
+  padding: 0;
+  border-bottom: 5px solid red;
+  margin-bottom: 0.5em;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 90%;
+}
+
+.about-me {
+  flex-basis: 100%;
+  margin-left: 2em;
+}
+
+fieldset {
+  background: #d3cfba;
+  border: 5px solid red;
+  box-shadow: 5px 5px #d3cfbab4;
+  border-radius: 5px;
+}
+
+legend {
+  font-family: "Oswald";
+  font-size: 3rem;
+  margin: 0 0.4em;
+  padding: 0 10px;
+  color: #eee;
+  text-shadow: 3px 4px red;
+}
+
+fieldset p {
+  padding: 1em 3.5em 3em 2em;
+  line-height: 1.7em;
+  color: black;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+/* -----COMMERCIAL------ */
+
+.commercial blockquote {
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
+  background-color: rgb(1, 11, 20);
+  margin: 0 auto;
+  font-size: 2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+span {
+  color: red;
+}
+
+/* ------MY WOOOOORKS SECTION------ */
+
+.inverted-section {
+  color: #eee;
+}
+
+.works {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4.2fr;
+  grid-template-areas:
+    "text text"
+    "uno dos";
+  gap: 0 0.5em;
+}
+
+.work-text {
+  grid-area: text;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.work-text h1 {
+  font-family: "Tourney", cursive;
+  font-size: 3rem;
+}
+
+.work-text p {
+  font-family: "Oswald";
+  margin-top: 10px;
+}
+
+.project-uno,
+.project-dos {
+  margin: 2em 0;
+}
+
+.project-uno {
+  grid-area: uno;
+  background: url("/resources/clipboard\ Page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.project-dos {
+  grid-area: dos;
+  background: url("/resources/About\ Us\ Page.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.description {
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 0, 0, 0.815);
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.description:hover {
+  background: red;
+  color: #eee;
+}
+
+.description h1 {
+  padding: 0.5em 0 0.5em;
+  font-size: 2rem;
+  font-family: "Tourney", cursive;
+}
+
+.description h3,
+.description p {
+  font-size: 1.2rem;
+  padding: 0.3em 1em;
+}
+
+.description a,
+.touch a {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1em 0;
+  border-radius: 25px;
+  text-decoration: none;
+  background: #d3cfba;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #151019;
+  transition: all 0.3s ease-in-out;
+}
+
+.description a:hover,
+.touch a:hover {
+  background: #eee;
+}
+
+.seventyfive {
+  flex-basis: 75%;
+}
+
+.twentyfive {
+  flex-basis: 25%;
+}
+
+/* -----Tools, Languages and Awards----- */
+
+.brag-section {
+  background: url("/resources/inverted.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  color: #151019;
+}
+
+.tools-container {
+  display: block;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.skill-img {
+  width: 80px;
+  margin: 0 0.9em;
+}
+
+.brag-header {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  padding: 1em 0;
+}
+
+.zoom {
+  width: 105px;
+}
+
+.certificates {
+  text-align: center;
+  display: block;
+  margin: 2em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cert-img {
+  width: 400px;
+  margin-bottom: 2em;
+}
+
+/* ------FOOOOOOOOOTTEEEEEEEEEEEEER-------- */
+
+footer {
+  background: black;
+  text-align: center;
+}
+
+.touch {
+  font-family: "Oswald";
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  /* border: 2px solid beige; */
+  padding: 1.5em 0;
+}
+
+.touch a {
+  margin-bottom: 1em;
+  border: 2px solid black;
+}
+
+.touch p {
+  padding: 1em 4em;
+  font-family: "Chakra Petch", sans-serif;
+  color: #d3cfba;
+}
+
+@media screen and (max-width: 743px) {
+  nav {
+    height: 25%;
+    padding: 0.3em;
+  }
+
+  .nav-contents {
+    flex-direction: column;
+  }
+
+  ul li {
+    font-size: 0.8rem;
+    margin: 0.5em;
+    padding: 0 1em;
+  }
+
+  .nav-contents img {
+    width: 50%;
+  }
+
+  .self-intro {
+    display: block;
+    height: 400px;
+  }
+
+  .intro {
+    margin: 3.5em 0;
+  }
+
+  header h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 200;
+    padding-right: 0;
+  }
+
+  h4 {
+    width: 90%;
+    color: red;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.5em;
+  }
+
+  .intro-img {
+    position: absolute;
+    width: 70%;
+    margin: 0 auto;
+    /* display: none; */
+  }
+
+  .intro-img img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    box-shadow: 10px 10px rgb(141, 2, 2);
+  }
+
+  .about-section {
+    /* border: 1px solid red; */
+    background: url("./resources/compute-ea4c57a4.png");
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+  /* ------About---- */
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .mapa {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  iframe {
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  .about-me {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 621px) {
+  .mapa h1 {
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 2.3rem;
+    color: #d3cfba;
+    padding: 0;
+    border-bottom: 5px solid red;
+    margin-bottom: 0.5em;
+  }
+
+  .inverted-section {
+    color: #eee;
+  }
+
+  .works {
+    grid-template-rows: 1fr 3.5fr 3.5fr;
+    grid-template-areas:
+      "text text"
+      "uno uno"
+      "dos dos";
+  }
+
+  .work-text h1 {
+    font-family: "Tourney", cursive;
+    font-size: 3rem;
+  }
+
+  .project-uno,
+  .project-dos {
+    margin: 1em 0;
+  }
+
+  .description h1 {
+    font-size: 1.5rem;
+  }
+
+  .description h3,
+  .description p {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
+
+  .description a,
+  .touch a {
+    max-width: 250px;
+    padding: 0.7em 0;
+  }
+
+  .intro-img {
+    position: static;
+    width: 70%;
+    margin: 0 auto;
+    /* display: none; */
+  }
+
+  .intro-img img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    box-shadow: 10px 10px rgb(141, 2, 2);
+  }
+
+  .certificates {
+    text-align: center;
+    display: block;
+    margin: 2em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cert-img {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 2em;
+  }
+
+  .social-icons {
+    position: absolute;
+    top: 40%;
+  }
+}
