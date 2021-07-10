@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Tourney:wdth,wght@105.2,510&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Lester Niel</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-contents">
-                <img src="/resources/Lester-Fong Logo.png" alt="Logo">
+            <div class="nav-contents" id="navlinks">
+                <img src="/lester-fong.github.io/resources/Lester-Fong Logo.png" alt="Logo">
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Works</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,7 +45,7 @@
   
   <main>
     <!-- -------ABOUT ME-------- -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about">
             <div class="mapa">
                 <h1>This is where I Live</h1>
@@ -64,10 +65,10 @@
 
     <!-------Tools, Languages and Awards------->
 
-    <section class="brag-section">
+    <section class="brag-section" id="skills">
         <div class="tools-container">
              <h1 class="brag-header">Tools and Languages I Know.</h1>
-             <img class="skill-img" src="/resources/git.png" alt="Git logo">
+             <img class="skill-img" src="./resources/git.png" alt="Git logo">
              <img class="skill-img" src="./resources/vs studio.png" alt="VS studio logo">
              <img class="skill-img" src="./resources/html.png" alt="HTML logo">
              <img class="skill-img" src="./resources/css.png" alt="CSS logo">
@@ -91,7 +92,7 @@
 
     <!-- --------WOOOOOORKS!------- -->
 
-    <section class="inverted-section">
+    <section class="inverted-section" id="works">
         <div class="works">
             <div class="work-text">
                 <h1>My Works</h1>
@@ -125,7 +126,7 @@
     </section>
 
     <!-- ------FOOOOOOOTEEEEEEERRRRRR!!!------- -->
-    <footer>
+    <footer id="contact">
         <div class="footer-container">
             <div class="touch">
                 <h1>Get In Touch</h1>
@@ -139,6 +140,16 @@
         </p>
     </footer>
   </main>
+
+  <script>
+
+    var scroll = new SmoothScroll('a[href*="#"]'); {
+        speed: 500;
+        speedDuration: true;
+    }
+
+</script>
+
 </body>
 </html>
 

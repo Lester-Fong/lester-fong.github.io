@@ -260,7 +260,7 @@ span {
 
 .project-uno {
   grid-area: uno;
-  background: url("/resources/clipboard\ Page.png");
+  background: url("./resources/clipboard\ Page.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -268,7 +268,7 @@ span {
 
 .project-dos {
   grid-area: dos;
-  background: url("/resources/About\ Us\ Page.png");
+  background: url("./resources/About\ Us\ Page.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -341,7 +341,7 @@ span {
 /* -----Tools, Languages and Awards----- */
 
 .brag-section {
-  background: url("/resources/inverted.png");
+  background: url("./resources/inverted.png");
   background-size: 100%;
   background-attachment: fixed;
   color: #151019;
@@ -467,13 +467,6 @@ footer {
     box-shadow: 10px 10px rgb(141, 2, 2);
   }
 
-  .about-section {
-    /* border: 1px solid red; */
-    background: url("./resources/compute-ea4c57a4.png");
-    background-size: 100%;
-    background-attachment: fixed;
-  }
-
   /* ------About---- */
 
   .about {
@@ -576,6 +569,6 @@ footer {
 
   .social-icons {
     position: absolute;
-    top: 40%;
+    bottom: 0;
   }
 }
