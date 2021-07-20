@@ -1,3 +1,15 @@
+//Smooth Scrolling
+
+var scroll = new SmoothScroll('a[href*="#"]'); {
+    speed: 500;
+    speedDuration: true;
+}
+
+
+
+
+// Popmotion
+
 const { styler, spring, listen, pointer, value } = window.popmotion;
 
 const ball = document.querySelector(".brand");
