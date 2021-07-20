@@ -137,6 +137,20 @@ h4 {
   color: #d3cfba;
 }
 
+/* -----POPMOTION----- */
+
+.nav-contents {
+  position: relative;
+  z-index: 5;
+}
+
+.brand {
+  margin: 0;
+  font-size: 50px;
+  cursor: grab;
+  z-index: 10;
+}
+
 /* -----ABOUT ME------ */
 
 .about-section {
